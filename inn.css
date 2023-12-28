@@ -1,0 +1,81 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar{
+    height: 5rem;
+ background-color: black;
+}
+.title{
+font-size: 40px;
+    color: white;
+    font-weight: 700;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+
+.content{
+    max-width: auto;
+
+     background-image: url(hero-bcg.jpg);
+   min-height: calc(100vh);
+   
+  
+}
+.text{  
+
+    padding-left: 20vw;
+    padding-top: 15vw;
+
+
+}
+.content-center{
+    animation: slideFromTop 5s 1;
+}
+.content p{
+
+    margin-top: 10px;
+   color: aliceblue;
+
+   
+}
+
+.btn{
+    padding: 5px;
+    text-transform: uppercase;
+  margin-top: 5vw;
+  color: aliceblue;
+    border: 2px white solid;
+   margin-left: 30vw;
+    letter-spacing: 2px;
+  background-color: transparent;
+  animation: slideFromBottom 5s ease-in-out 1;
+
+}
+
+@keyframes slideFromTop{
+    0%{
+        transform: translateY(0px);
+opacity: 0;
+    }
+    100%{
+transform: translateY(100px);
+opacity: 1;
+    }
+}
+@keyframes slideFromBottom {
+    0%{opacity: 0;
+        transform: translateY(100px);
+
+    }
+    100%{opacity: 1;
+transform: translateY(0px);
+
+    }
+}
